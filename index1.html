@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pepsi website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="sec">
+		<header>
+			<a href="#"><img src="logo.png" class="logo"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">What's news</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textbox">
+				<h2>That's What<br><span>I like</span></h2>
+				<p> Pepsi is known to have topped Coca Cola once in 1979, but Coca Cola quickly rose and back up its position in the global market. While Pepsi has branched into may foods apart from beverages such as sun chips, Coca Cola has been consistent and still sticks to mostly beverages such as Minute Maid (Lubin).</p>
+				<a href="#">View All Products</a>
+			</div>
+			<div class="imgbox">
+				<img src="pepsi001.png" class="pepsi">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgcolor('#0062be')"></li>
+			<li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgcolor('#e60c2c')"></li>
+			<li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png"></a></li>
+			<li><a href="#"><img src="twitter.png"></a></li>
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.pepsi').src = anything;
+		}
+		function changeBgcolor(color){
+			const sec = document.querySelector('.sec');
+			sec.style.background = color;
+		}
+	</script>
+</body>
+</html>
